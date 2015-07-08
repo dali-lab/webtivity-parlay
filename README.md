@@ -114,7 +114,7 @@ This is when the fun starts.  How do you fix this?
 
 The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in.
 
-If you were to do this by hand git takes the pretty code you wrote and injects terrible "conflict markers" that look like this:
+If you were to do this by hand, git takes the pretty code you wrote and injects terrible "conflict markers" that look like this:
 
 	<<<<<<< HEAD
 	var h = 'hello, world';
