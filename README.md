@@ -1,7 +1,14 @@
-# WEBDEV getting started
+# DALI Project Collaborative Intro WEBTIVITY
 
 
-So you want to make a webpage. You want your own domain.  You want it all.  This is a 1 hour long tutorial to get you up and running and developing with some nice tools.  This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
+## Overview 
+
+*  In your groups, each person will use git to clone a version of a new landing page template project for your team.  
+*  Then you'll edit some html and css to make this template page reflect what your project is about.
+*  Each person should add themselves into the team section
+*  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
+
+  This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
 
 ![](docs/img/square.png) indicates a step to do. 
 
@@ -14,7 +21,7 @@ So you want to make a webpage. You want your own domain.  You want it all.  This
   <br>![](docs/img/square.png) 1.0)  install from [atom.io](http://atom.io)
   <br>![](docs/img/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
 
-* ###[git](http://git-scm.com)  
+* ###[git+github](http://www.github.com)  
   git is a code collaboration tool but also will allow us to use github to host our pages! If you already have git then you can skip this step.
   
   <br>![](docs/img/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
@@ -73,10 +80,37 @@ Play around and make some changes.  In particular add yourself to the team secti
 
 
 
-
-
 ##4) Git
 
+
+Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sortof like an offline google docs where you *commit* every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
+
+![](docs/img/git_workflow.png)
+
+###Clone the repo:
+You have already done this step using the ```git clone``` command.
+
+
+###Commit your changes:
+In Terminal:  ```git commit -am "i made some changes"```
+
+``-a`` means all changes<br>
+``-m`` indicates that your commit message follows directly
+
+
+###Pull your teammates changes:
+In Terminal:  ```git pull```
+
+This will check the github remote server for any changes and download and merge them into your local repo. 
+
+###Merge Conflicts
+
+At this point after a ```git pull``` you may get a message that looks like this:
+
+     CONFLICT (content): Merge conflict in somefile
+     Automatic merge failed; fix conflicts and then commit the result.
+
+This is when the fun starts.  How do you fix this?
 
 
 
