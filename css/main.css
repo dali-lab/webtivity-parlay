@@ -109,7 +109,7 @@ footer {
 
 .content hr {
     border: none;
-    height: 2.5px;
+    height: 2px;
     /*background-color: rgb(243, 113, 86);*/
     background-color: rgba(80, 74, 75, 0.63);
     width: 50%;
