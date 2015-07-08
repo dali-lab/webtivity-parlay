@@ -59,7 +59,7 @@ You are now ready to start webdev for real!
 
   <br>![](docs/img/square.png) 3.0)  In Terminal run:  ```atom .```
 
-This will open the current folder into the Atom text editor. Note the folder structure.  What are you reading now is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file in the **Documentation** folder. 
+This will open the current folder into the Atom text editor. Note the folder structure.  What are you reading now (in browser) is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file: **README.md**. 
 
 The main file that gets loaded for the site is **index.html**.
 The file that contains the majority of css styling is in **css/main.css**.
