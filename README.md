@@ -66,7 +66,7 @@ The file that contains the majority of css styling is in **css/main.css**.
 Image assets are in **img**.
 Javascripts are in **js**.
 
-  <br>![](docs/img/square.png) 3.1) Lets view what is there already now. In Terminal:  ```python -m SimpleHTTPServer &```
+  <br>![](docs/img/square.png) 3.1) Lets view what is there already now. In Terminal (copy/paste):  ```python -m SimpleHTTPServer &``` 
 
 ![](docs/img/simpleserver.jpg)<br>
 this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:8000](http://localhost:8000)
