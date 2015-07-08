@@ -44,6 +44,7 @@
     var onethirdsHeight = (winH) / 3;
     $('#cover-1').height(2*onethirdsHeight);
     $('#cover-2').height(2*onethirdsHeight);
+    $('#content-1').height(6*onethirdsHeight);
 
     // Refresh Skrollr after resizing our sections
     s.refresh($('.cover, .content'));
