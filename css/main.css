@@ -78,14 +78,6 @@ footer {
   padding-bottom: 30px;
 }
 
-#preload {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .cover .baselayer {
   position: relative;
   background-position: center center;
