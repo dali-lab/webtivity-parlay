@@ -3,93 +3,98 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
+<!-- Adapted from initializr template by Runi Goswami -->
 <html class="no-js" lang="">
 <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
+  <title>15X DALI Dev</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 
-  <!-- Latest compiled and minified CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 </head>
 
-<body>
+<body class="loading">
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <section id="navview">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- hamburger menu when mobile -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">WEBPAGE</a>
-        </div>
 
-        <div id="navbar" class="navbar-collapse collapse">
+  <!-- preload all images -->
+  <div id="preload">
+    <!-- <img src="img/cover0_layer0.jpg"> -->
+  </div>
 
-        </div>
-        <!--/.navbar-collapse -->
+  <main>
+
+    <section id="cover-0" class="cover">
+      <div class="baselayer" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -75px;" data-anchor-target="#cover-0">
       </div>
-    </nav>
-  </section>
+    </section>
 
+    <section id="content-0" class="content">
+      <div class="baselayer">
 
-  <!-- main content goes here -->
-  <section id="main_content" class="container-fluid">
-    <!-- Main jumbotron  -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>Here there be a very basic bootstrap template.</p>
-        <p><a class="btn btn-primary btn-lg" href="http://getbootstrap.com" target="_blank" role="button">Learn more &raquo;</a></p>
+          <div class="container">
+            <h1>Hello, world!</h1>
+            <p>Here there be a very basic bootstrap template.</p>
+            <p><a class="btn btn-primary btn-lg" href="http://getbootstrap.com" target="_blank" role="button">Learn more &raquo;</a></p>
+          </div>
+
       </div>
-    </div>
+    </section>
 
+    <section id="cover-1" class="cover">
+      <div class="baselayer" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -75px;" data-anchor-target="#cover-1">
+      </div>
+    </section>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="text-center">
-            <div class="glyphicon glyphicon-leaf weird-glyphs"></div>
-            <div class="text-center">leaf on the wind</div>
+    <section id="content-1" class="content">
+      <div class="baselayer">
+        <div class="container">
+          <div class="row text-center">
+            The Team
+          </div>
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="text-center">
+                <div class="glyphicon glyphicon-leaf weird-glyphs"></div>
+                <div class="text-center">leaf on the wind</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <div class="glyphicon glyphicon-flash weird-glyphs"></div>
+                <div class="text-center">lighting flashes</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <div class="glyphicon glyphicon-fire weird-glyphs"></div>
+                <div class="text-center">world ends in fire</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="text-center">
-            <div class="glyphicon glyphicon-flash weird-glyphs"></div>
-            <div class="text-center">lighting flashes</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center">
-            <div class="glyphicon glyphicon-fire weird-glyphs"></div>
-            <div class="text-center">world ends in fire</div>
-          </div>
-        </div>
       </div>
+    </section>
 
 
-    </div>
-    <!-- /container -->
-  </section>
+
+  </main>
 
   <section id="footer">
     <div></div>
@@ -110,10 +115,14 @@
   </section>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Latest compiled and minified boostrap javascript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+  <!-- load some vendor vs -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/vendor/imagesloaded.js"></script>
+  <script src="js/vendor/skrollr.js"></script>
+  <script src="js/vendor/snap.svg-min.js"></script>
+
+  <!-- load my js -->
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -133,6 +142,7 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
+
 </body>
 
 </html>
