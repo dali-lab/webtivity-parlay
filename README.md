@@ -58,9 +58,12 @@ Javascripts are in **js**.
 
 *  Lets view what is there already now. In Terminal:  ```python -m SimpleHTTPServer &```
 
-this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:8000](http://localhost:8000)  What this means is have a process running on your laptop
+![](docs/img/simpleserver.jpg)<br>
+this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:8000](http://localhost:8000)
 
-The file that contains the majority of css styling is in **css/main.css**
+*If you get an error or don't have python, never fear, for now just open **index.html** manually in your browser, this breaks for certain javascript but will work for this example.*
+  
+*  back in Atom, 
 
 Play around and make some changes.  In particular add yourself to the team section!  Change some images. 
 

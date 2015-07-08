@@ -162,7 +162,11 @@ footer {
 }
 
 
-.weird-glyphs {
+.example-glyphs {
   padding-top: 50px;
   font-size: 75px;
+}
+
+.glyphicon-heart {
+  color: rgb(203, 65, 65);
 }
