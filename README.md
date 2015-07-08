@@ -8,7 +8,7 @@
 *  Each person should add themselves into the team section
 *  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
 
-  This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
+  This mostly assumes that you are using a recent version of OS X, so your mileage may vary. Some of the template is broken in Firefox -- for now don't use firefox. 
 
 ![](docs/img/square.png) indicates a step to do. 
 
@@ -28,7 +28,7 @@
   <br>![](docs/img/square.png) 1.3)  Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
   <br>![](docs/img/square.png) 1.4)  Run *GitHub* app, and set up with your new account.
   <br>![](docs/img/square.png) 1.5)  Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
-  ![](docs/img/github_cmd.png)
+  <img src="docs/img/github_cmd.png" style="width:600px;">
 
 * no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://docs.google.com/document/d/1XODTyblh3NP1sxO-mObPfx5STlbD78tK0r2lmj4E8Co).
 
@@ -38,7 +38,7 @@ We'll have to use some Terminal command line dark magic here.  Copy/paste is you
 
   <br>![](docs/img/square.png) 2.0)  Open Terminal (on Windows open Git Shell)
   <br>![](docs/img/square.png) 2.1)  ```cd ~/Desktop```
-  <br>![](docs/img/square.png) 2.2)  ```git clone https://github.com/timofei7/all-the-webdev.git```
+  <br>![](docs/img/square.png) 2.2)  ```git clone https://github.com/dali-lab/project-name.git```
   <br>![](docs/img/square.png) 2.3)  ```cd all-the-webdev```
 
 what this does is change directory to your Desktop, then clones the the tutorial repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
@@ -85,7 +85,7 @@ Play around and make some changes.  In particular add yourself to the team secti
 
 Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sortof like an offline google docs where you *commit* every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
 
-![](docs/img/git_workflow.png)
+<img src="docs/img/git_workflow.png" style="width:600px;">
 
 ###Clone the repo:
 You have already done this step using the ```git clone``` command.
@@ -112,11 +112,42 @@ At this point after a ```git pull``` you may get a message that looks like this:
 
 This is when the fun starts.  How do you fix this?
 
+The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in.
+
+If you were to do this by hand git takes the pretty code you wrote and injects terrible "conflict markers" that look like this:
+
+	<<<<<<< HEAD
+	var h = 'hello, world';
+	=======
+	var h = 'Hi!';
+	>>>>>>> cb1abc6bd98cfc84317f8aa95a7662815417802d
+      
+where the line between  ```<<<HEAD``` and ```====``` is the line/lines of code that are relevant in your file, and between  ```====``` and ```>>>> cb1abc6``` are from the remote repository.  The crazy characters refer to the commit that the change comes from. 
+
+Since we've been using Atom so far there is a nice plugin to help visualize this a little better.
+
+  <br>![](docs/img/square.png) Atom -> Preferences -> Install -> search for merge-conflicts
+  <img src="docs/img/merge-conflicts.gif" style="width:600px;">
 
 
+Once you have your conflict file the way you want it.  Fixed and without any more of the conflict markers.
+
+All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will continue the pull and automatically create a commit message.
 
 
+###Push Your Commits
 
+Now that you've resolved any conflicts you're ready to push to the remote repository!
+
+  <br>![](docs/img/square.png) ```git push origin gh-pages```
+  
+  ```origin``` is the remote you are pushing to and is named origin by default
+ 
+ ```gh-pages``` is the branch you are pushing. We haven't talked about branches but for github to host your repo you just need to have a branch called *gh-pages*.
+
+###Done!
+
+Now you can go to [http://dali-lab.github.io/project-name](http://dali-lab.github.io/project-name) to see your site!
 
 
 
