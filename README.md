@@ -150,6 +150,8 @@ Now that you've resolved any conflicts you're ready to push to the remote reposi
 Now you can go to [http://dali-lab.github.io/project-name](http://dali-lab.github.io/project-name) to see your site!
 
 
-
 <br>
+
+To stop the python web server process just run:
+```pgrep -f SimpleHTTPServer| xargs kill```
 
