@@ -1,0 +1,44 @@
+
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+ html, body {
+   height: 100%;
+   padding-top: 50px;
+ }
+
+#main_content {
+   overflow: auto;
+   padding-bottom:250px;
+   min-height:100%;
+}
+
+footer .dali-logo {
+     margin-top: 60px;
+     width: 200px;
+}
+
+footer {
+  background-color: #222222;
+  height: 250px;
+  position:relative;
+  margin-top: -250px;
+  clear:both;
+}
+
+
+.weird-glyphs {
+  padding-top: 50px;
+  font-size: 75px;
+}
+
+.glyphicon-leaf {
+  color: rgb(86, 164, 76);
+}
+.glyphicon-fire {
+  color: rgb(184, 88, 19);
+}
+.glyphicon-flash {
+  color: rgb(238, 229, 8);
+}
