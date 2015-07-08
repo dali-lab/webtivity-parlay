@@ -1,7 +1,7 @@
 # WEBDEV getting started
 
 
-So you want to make a webpage. You want your own domain.  You want it all.  This is a 1 hour long tutorial to get you up and running and developing with some nice tools. 
+So you want to make a webpage. You want your own domain.  You want it all.  This is a 1 hour long tutorial to get you up and running and developing with some nice tools.  This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
 
 
 ##1)  Tools
@@ -18,4 +18,16 @@ So you want to make a webpage. You want your own domain.  You want it all.  This
   1.  Go to Preferences -> Advanced and fill in your information with the same email you used for your github account and then click "Install Command Line Tools"
   ![](img/github_cmd.png)
 
-* no other tools will be necessary but here's a [list of DALI recommended dev tools]().
+* no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://docs.google.com/document/d/1XODTyblh3NP1sxO-mObPfx5STlbD78tK0r2lmj4E8Co).
+
+##2)  Terminal
+
+We'll have to use some Terminal command line dark magic here.  Copy/paste is your friend.  
+
+1. Open Terminal (on Windows open Git Shell)
+1. ```cd ~/Desktop```
+2. ```git clone https://github.com/timofei7/all-the-webdev.git```
+
+what this does is change directory to your Desktop and then clones the the tutorial repository there.
+
+ 
