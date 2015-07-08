@@ -21,7 +21,7 @@
   <br>![](docs/img/square.png) 1.0)  install from [atom.io](http://atom.io)
   <br>![](docs/img/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
 
-* ###[git+github](http://www.github.com)  
+* ###[git+github](http://www.github.com)  al
   git is a code collaboration tool but also will allow us to use github to host our pages! If you already have git then you can skip this step.
   
   <br>![](docs/img/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
@@ -39,7 +39,7 @@ We'll have to use some Terminal command line dark magic here.  Copy/paste is you
   <br>![](docs/img/square.png) 2.0)  Open Terminal (on Windows open Git Shell)
   <br>![](docs/img/square.png) 2.1)  ```cd ~/Desktop```
   <br>![](docs/img/square.png) 2.2)  ```git clone https://github.com/dali-lab/project-name.git```
-  <br>![](docs/img/square.png) 2.3)  ```cd all-the-webdev```
+  <br>![](docs/img/square.png) 2.3)  ```cd dali-1hr-webdev```
 
 what this does is change directory to your Desktop, then clones the the tutorial repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
 
