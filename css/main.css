@@ -42,7 +42,12 @@ body, html {
 h1, h2, h3 {
   font-weight: 700;
   text-align: center;
+  color: rgb(243, 113, 86);
   /*margin-top: 0;*/
+}
+
+h6{
+  color: rgb(243, 113, 86);
 }
 .no-js {
   padding-top: 106px;
@@ -104,8 +109,9 @@ footer {
 
 .content hr {
     border: none;
-    height: 3px;
-    background-color: rgb(80, 74, 75);
+    height: 2px;
+    /*background-color: rgb(243, 113, 86);*/
+    background-color: rgba(80, 74, 75, 0.63);
     width: 50%;
 }
 
