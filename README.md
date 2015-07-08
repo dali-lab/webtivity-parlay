@@ -143,7 +143,7 @@ Now that you've resolved any conflicts you're ready to push to the remote reposi
   
   ```origin``` is the remote you are pushing to and is named origin by default
  
- ```gh-pages``` is the branch you are pushing. We haven't talked about branches but for github to host your repo you just need to have a branch called *gh-pages*.
+ ```gh-pages``` is the branch you are pushing. Using the ```gh-pages``` branch lets github know that you would like this code hosted as a static website.
 
 ###Done!
 
