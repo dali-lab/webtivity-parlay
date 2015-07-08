@@ -132,7 +132,7 @@ Since we've been using Atom so far there is a nice plugin to help visualize this
 
 Once you have your conflict file the way you want it.  Fixed and without any more of the conflict markers.
 
-All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will continue the pull and automatically create a commit message.
+All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will complete the merge and automatically create a commit message.
 
 
 ###Push Your Commits
