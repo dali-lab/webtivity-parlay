@@ -14,15 +14,19 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" />
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- loads a google font -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/h5bp.css">
 
+  <!-- loads your css -->
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- loads jquery and initializr shims -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 </head>
@@ -47,12 +51,36 @@
     <section id="content-0" class="content">
       <div class="baselayer">
 
-          <div class="container">
-            <h1>Hello, world!</h1>
-            <p>Here there be a very basic bootstrap template.</p>
-            <p><a class="btn btn-primary btn-lg" href="http://getbootstrap.com" target="_blank" role="button">Learn more &raquo;</a></p>
-          </div>
+        <div class="container">
+        			<div class="row">
+        				<div class="col-md-6 col-md-offset-3 text-center">
+        					<h4>Hello, World</h4>
+                  <hr>
+        				</div>
+        			</div>
 
+        			<div class="row">
+        				<div class="col-md-8 col-md-offset-2 text-center">
+        					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when a printer took a galley of type and scrambled it to make a type specimen book.</p>
+        				</div>
+        			</div>
+
+        			<div class="row text-center">
+        					<i class="ion-ios7-bookmarks-outline"></i>
+        			</div>
+
+              <br>
+
+              <div class="row">
+        				<div class="col-md-6">
+        					<p class="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+        				</div>
+
+        				<div class="col-md-6">
+        					<p class="text">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        				</div>
+        			</div>
+        		</div>
       </div>
     </section>
 
@@ -63,32 +91,30 @@
 
     <section id="content-1" class="content">
       <div class="baselayer">
-        <div class="container">
-          <div class="row text-center">
-            The Team
-          </div>
-          <!-- Example row of columns -->
-          <div class="row">
-            <div class="col-md-4">
-              <div class="text-center">
-                <div class="glyphicon glyphicon-leaf weird-glyphs"></div>
-                <div class="text-center">leaf on the wind</div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="text-center">
-                <div class="glyphicon glyphicon-flash weird-glyphs"></div>
-                <div class="text-center">lighting flashes</div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="text-center">
-                <div class="glyphicon glyphicon-fire weird-glyphs"></div>
-                <div class="text-center">world ends in fire</div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+      <div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<h4>The Team</h4>
+          <hr>
+				</div>
+			</div><!--/row -->
+
+
+			<div class="row">
+				<div class="col-md-6 text-center">
+					<p class="testimonial"><img src="img/kitten.jpg" class="img-circle aligncenter" alt=""></p>
+					<h6>Name Name</h6>
+					<p class="centered testimonial">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<p class="testimonial"><img src="img/kitten.jpg" class="img-circle aligncenter" alt=""></p>
+					<h6>Other Name</h6>
+					<p class="centered testimonial">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.</p>
+				</div>
+			</div><!--/row -->
+    	</div>
+
       </div>
     </section>
 
@@ -120,7 +146,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/vendor/imagesloaded.js"></script>
   <script src="js/vendor/skrollr.js"></script>
-  <script src="js/vendor/snap.svg-min.js"></script>
 
   <!-- load my js -->
   <script src="js/main.js"></script>

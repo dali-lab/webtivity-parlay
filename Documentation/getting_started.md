@@ -49,13 +49,18 @@ You are now ready to start webdev for real!
 In Terminal run:  ```atom .```
 This will open the current folder into the Atom text editor.
 
-Note the folder structure.  What are you reading now is actually a [markdown](https://help.github.com/articles/markdown-basics/) file in the **Documentation** folder. 
+Note the folder structure.  What are you reading now is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file in the **Documentation** folder. 
 
 The main file that gets loaded for the site is **index.html**.
 
 The file that contains the majority of css styling is in **css/main.css**
 
+Play around and make some changes.  In particular add yourself to the team section!  Change some images. 
 
+
+
+
+##4) Git
 
 
 
