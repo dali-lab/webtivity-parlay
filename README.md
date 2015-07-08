@@ -21,7 +21,7 @@
   <br>![](docs/img/square.png) 1.0)  install from [atom.io](http://atom.io)
   <br>![](docs/img/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
 
-* ###[git+github](http://www.github.com)  
+* ###[git+github](http://www.github.com)  al
   git is a code collaboration tool but also will allow us to use github to host our pages! If you already have git then you can skip this step.
   
   <br>![](docs/img/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
@@ -39,7 +39,7 @@ We'll have to use some Terminal command line dark magic here.  Copy/paste is you
   <br>![](docs/img/square.png) 2.0)  Open Terminal (on Windows open Git Shell)
   <br>![](docs/img/square.png) 2.1)  ```cd ~/Desktop```
   <br>![](docs/img/square.png) 2.2)  ```git clone https://github.com/dali-lab/project-name.git```
-  <br>![](docs/img/square.png) 2.3)  ```cd all-the-webdev```
+  <br>![](docs/img/square.png) 2.3)  ```cd dali-1hr-webdev```
 
 what this does is change directory to your Desktop, then clones the the tutorial repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
 
@@ -132,7 +132,7 @@ Since we've been using Atom so far there is a nice plugin to help visualize this
 
 Once you have your conflict file the way you want it.  Fixed and without any more of the conflict markers.
 
-All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will continue the pull and automatically create a commit message.
+All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will complete the merge and automatically create a commit message.
 
 
 ###Push Your Commits
@@ -143,7 +143,7 @@ Now that you've resolved any conflicts you're ready to push to the remote reposi
   
   ```origin``` is the remote you are pushing to and is named origin by default
  
- ```gh-pages``` is the branch you are pushing. We haven't talked about branches but for github to host your repo you just need to have a branch called *gh-pages*.
+ ```gh-pages``` is the branch you are pushing. Using the ```gh-pages``` branch lets github know that you would like this code hosted as a static website.
 
 ###Done!
 
