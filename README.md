@@ -83,7 +83,7 @@ Play around and make some changes.  In particular add yourself to the team secti
 ##4) Git
 
 
-Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sortof like an offline google docs where you *commit* every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
+Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
 
 <img src="docs/img/git_workflow.png" style="width:600px;">
 
@@ -95,7 +95,7 @@ You have already done this step using the ```git clone``` command.
 In Terminal:  ```git commit -am "i made some changes"```
 
 ``-a`` means all changes<br>
-``-m`` indicates that your commit message follows directly
+``-m`` indicates that your commit message follows directly, a commit message is required.
 
 
 ###Pull your teammates changes:
