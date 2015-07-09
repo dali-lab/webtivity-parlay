@@ -90,6 +90,8 @@ Now that you've made some changes to the site, we'll go over how to use git to c
 ###Clone the repo:
 You have already done this step using the ```git clone``` command.
 
+###Check status
+Use ```git status``` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.  Use ```git add filename``` on those files to tell git to track them. 
 
 ###Commit your changes:
 In Terminal:  ```git commit -am "i made some changes"```
