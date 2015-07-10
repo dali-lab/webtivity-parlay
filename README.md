@@ -21,7 +21,7 @@
   <br>![](docs/img/square.png) 1.0)  install from [atom.io](http://atom.io)
   <br>![](docs/img/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
 
-* ###[git+github](http://www.github.com)  al
+* ###[git+github](http://www.github.com)
   git is a code collaboration tool but also will allow us to use github to host our pages! If you already have git then you can skip this step.
   
   <br>![](docs/img/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
