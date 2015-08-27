@@ -71,7 +71,7 @@ Javascripts are in **js**.
 ![](docs/img/simpleserver.jpg)<br>
 this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:8000](http://localhost:8000)
 
-*If you get an error or don't have python, never fear, for now just open **index.html** manually in your browser, this breaks for certain javascript but will work for this example.*
+*If you get an error or don't have python, never fear, for now just open index.html manually in your browser, this breaks for certain javascript but will work for this example.*
   
   <br>![](docs/img/square.png) 3.2) back in Atom, 
 
