@@ -57,7 +57,7 @@ You are now ready to start webdev for real!
 
 ##3) Code
 
-  <br>![](docs/img/square.png) 3.0)  In Terminal run:  ```atom .```
+  <br>![](docs/img/square.png) 3.0)  In Terminal run:  ```atom .``` For Windows, just open up atom and open the folder that you just made.  
 
 This will open the current folder into the Atom text editor. Note the folder structure.  What are you reading now (in browser) is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file: **README.md**. 
 
@@ -71,7 +71,7 @@ Javascripts are in **js**.
 ![](docs/img/simpleserver.jpg)<br>
 this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:8000](http://localhost:8000)
 
-*If you get an error or don't have python, never fear, for now just open index.html manually in your browser, this breaks for certain javascript but will work for this example.*
+*If you have Windows, get an error, or don't have python, never fear, for now just open index.html manually in your browser, this breaks for certain javascript but will work for this example.*
   
   <br>![](docs/img/square.png) 3.2) back in Atom, 
 
