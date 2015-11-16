@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/vue.min.js"></script>
+    </head>
+
+    <body>
+      <div id="app">
+        <!-- your name and competitor -->
+        <div>
+          Your name: Russell<br>
+          Your Opponent: {{ submitData.opponent }}
+          <button v-on:click="showFriendsList">Pick your friend</button>
+          <div v-if="fls">
+            <ul>
+              <li v-for="friend in friendsList">
+                {{ friend.name }}
+                <button v-on:click="setSubData('opponent',$index)">(^_^)</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- What the parlay is -->
+        <div v-if="componentsList.parlay" transition="expand">
+          What the parlay is?
+          <button v-on:click="appear('photo')">Next</button>
+        </div>
+
+        <!-- photo or donate -->
+        <div v-if="componentsList.photo" transition="expand">
+          Photo or donate
+          <ul>
+            <li v-for="p in parTypes">
+              <span v-bind:style="p.styleObject">{{ p.way }}</span>
+              <button v-on:click="setSubData('parlay',$index)">(^_^)</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Judge and Calendar -->
+        <div v-if="componentsList.jc" transition="expand">
+          Judge and calendar
+          <button v-on:click="appear('sub')">Next</button>
+        </div>
+
+        <!-- submission -->
+        <div v-if="componentsList.sub" transition="expand">
+          <button v-on:click="subForm">Parlay!</button>
+        </div>
+
+      </div>
+    </body>
+    <script src="js/run.js"></script>
+</html>
