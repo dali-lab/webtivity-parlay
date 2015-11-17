@@ -26,10 +26,10 @@ new Vue({
     fls: false,
     jls: false,
     friendsList : [
-      {name: "Jenny", gender: "girl" },
-      {name: "Zach", gender: "boy"},
-      {name: "Peter", gender: "boy"},
-      {name: "James", gender: "boy"}
+      {name: "Jenny", gender: "girl", amtr: "img/1.png"},
+      {name: "Zach", gender: "boy", amtr:"img/2.png"},
+      {name: "Peter", gender: "boy", amtr:"img/3.png"},
+      {name: "James", gender: "boy", amtr:"img/4.png"}
     ],
 
     parTypes: [
@@ -39,10 +39,9 @@ new Vue({
     ],
 
     submitData: {
-      opponent: "+",
+      opponent: {name: "+", amtr: "img/add.png"},
       parlayType: "default",
       judge: "default",
-      parlayDate: "default",
       parlayContent: "default"
     }
   },
@@ -75,7 +74,7 @@ new Vue({
     // Set the opponent
     setSubData: function(t,index){
       if(t == "opponent") {
-        this.submitData.opponent = this.friendsList[index].name;
+        this.submitData.opponent = this.friendsList[index];
         this.friendsList.splice(index,1); //This cannot be updated to backend
         this.appear("parlay");
       }
@@ -87,6 +86,7 @@ new Vue({
       if(t == "judge") {
         this.submitData.judge = this.friendsList[index].name;
         this.jls = false;
+        this.appear('sub');
       }
     },
 

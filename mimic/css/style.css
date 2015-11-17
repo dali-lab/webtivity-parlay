@@ -9,3 +9,11 @@
   padding: 0 10px;
   opacity: 0;
 }
+
+.container {
+  margin: 0 auto;
+}
+
+.ctrlize {
+  text-align: center;
+}
