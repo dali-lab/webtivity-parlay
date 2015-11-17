@@ -24,6 +24,7 @@ new Vue({
     },
 
     fls: false,
+    jls: false,
     friendsList : [
       {name: "Jenny", gender: "girl" },
       {name: "Zach", gender: "boy"},
@@ -41,7 +42,8 @@ new Vue({
       opponent: "+",
       parlayType: "default",
       judge: "default",
-      parlayDate: "default"
+      parlayDate: "default",
+      parlayContent: "default"
     }
   },
 
@@ -61,14 +63,20 @@ new Vue({
     },
 
     // Pick your friend
-    showFriendsList: function(){
-      this.fls = true;
+    showList: function(l){
+      if(l == "friends") {
+        this.fls = true;
+      }
+      if(l == "judge") {
+        this.jls = true;
+      }
     },
 
     // Set the opponent
     setSubData: function(t,index){
       if(t == "opponent") {
         this.submitData.opponent = this.friendsList[index].name;
+        this.friendsList.splice(index,1); //This cannot be updated to backend
         this.appear("parlay");
       }
       if(t == "parlay") {
@@ -76,12 +84,17 @@ new Vue({
         this.parTypes[index].styleObject.color = 'blue';
         this.appear("jc");
       }
+      if(t == "judge") {
+        this.submitData.judge = this.friendsList[index].name;
+        this.jls = false;
+      }
     },
 
     //submit the form - pop up a window here for testing
     subForm: function(){
       alert("You are playing with" + " " + this.submitData.opponent +
-        " " + this.submitData.parlayType + "!"
+        " " + this.submitData.parlayType + " ! " + this.submitData.parlayContent
+        + " " + this.submitData.judge
       );
     }
   }
