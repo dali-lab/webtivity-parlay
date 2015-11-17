@@ -29,7 +29,7 @@
               </div>
             </div>
             <button v-on:click="showList('friends')">Pick your friend</button>
-            <div v-if="fls" transition="expand">
+            <div v-if="fls" transition="expand" class="popup">
               <ul>
                 <li v-for="friend in friendsList">
                   {{ friend.name }}
@@ -60,10 +60,10 @@
           <!-- Judge and Calendar -->
           <div v-if="componentsList.jc" transition="expand">
             <button v-on:click="showList('judge')">Judge</button>
-            <div v-if="jls" transition="expand">
+            <div v-if="jls" transition="expand" class="popup">
               <ul>
-                <li v-for="friend in friendsList">
-                  {{ friend.name }}
+                <li v-for="judge in judgeList">
+                  {{ judge.name }}
                   <button v-on:click="setSubData('judge',$index)">(^_^)</button>
                 </li>
               </ul>

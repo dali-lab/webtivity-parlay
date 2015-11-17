@@ -32,6 +32,10 @@ new Vue({
       {name: "James", gender: "boy", amtr:"img/4.png"}
     ],
 
+    judgeList: [
+
+    ],
+
     parTypes: [
       {way: "photo", styleObject: {color: 'red'}},
       {way: "donate", styleObject: {color: 'red'}},
@@ -42,7 +46,7 @@ new Vue({
       opponent: {name: "+", amtr: "img/add.png"},
       parlayType: "default",
       judge: "default",
-      parlayContent: "default"
+      parlayContent: "Write your parlay here"
     }
   },
 
@@ -75,26 +79,30 @@ new Vue({
     setSubData: function(t,index){
       if(t == "opponent") {
         this.submitData.opponent = this.friendsList[index];
-        this.friendsList.splice(index,1); //This cannot be updated to backend
+        this.judgeList = this.friendsList.slice();
+        this.judgeList.splice(index,1);
+
         this.appear("parlay");
       }
       if(t == "parlay") {
         this.submitData.parlayType = this.parTypes[index].way;
         this.parTypes[index].styleObject.color = 'blue';
+
         this.appear("jc");
       }
       if(t == "judge") {
-        this.submitData.judge = this.friendsList[index].name;
+        this.submitData.judge = this.judgeList[index].name;
         this.jls = false;
+
         this.appear('sub');
       }
     },
 
     //submit the form - pop up a window here for testing
     subForm: function(){
-      alert("You are playing with" + " " + this.submitData.opponent +
+      alert("You are playing with" + " " + this.submitData.opponent.name +
         " " + this.submitData.parlayType + " ! " + this.submitData.parlayContent
-        + " " + this.submitData.judge
+        + " judged by " + this.submitData.judge
       );
     }
   }
