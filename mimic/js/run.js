@@ -37,9 +37,9 @@ new Vue({
     ],
 
     parTypes: [
-      {way: "photo", styleObject: {color: 'red'}},
-      {way: "donate", styleObject: {color: 'red'}},
-      {way: "transfer", styleObject: {color: 'red'}}
+      {way: "photo", styleObject: {color: 'black', border: 'none'}},
+      {way: "donate", styleObject: {color: 'black', border: 'none'}},
+      {way: "transfer", styleObject: {color: 'black', border: 'none'}}
     ],
 
     submitData: {
@@ -86,7 +86,11 @@ new Vue({
       }
       if(t == "parlay") {
         this.submitData.parlayType = this.parTypes[index].way;
-        this.parTypes[index].styleObject.color = 'blue';
+        this.parTypes[index].styleObject = {
+          color: 'red',
+          border: 'solid red',
+          padding: '2px 4px 2px 4px'
+        };
 
         this.appear("jc");
       }
