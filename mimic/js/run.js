@@ -45,7 +45,7 @@ new Vue({
     submitData: {
       opponent: {name: "+", amtr: "img/add.png"},
       parlayType: "default",
-      judge: "default",
+      judge: "",
       parlayContent: "Write your parlay here"
     }
   },
