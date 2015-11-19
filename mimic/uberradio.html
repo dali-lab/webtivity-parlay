@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="css/uberradio.css">
+  </head>
+  <body>
+    <div class="container" >
+      <div id="fform">
+      <form class="pure-form pure-form-stacked">
+        <fieldset>
+          <legend>Parlay Type</legend>
+          <div class="pure-g">
+            <div class="pure-u-1-3">
+              <label for="photo">Photo</label>
+              <input id="p1" type="radio" name="parlayMenu" value="photo" checked>
+            </div>
+
+            <div class="pure-u-1-3">
+              <label for="charity">Donate to charity</label>
+              <input id="p2" type="radio" name="parlayMenu" value="charity" >
+            </div>
+
+            <div class="pure-u-1-3">
+              <label for="trans">Tranfer money to a friend</label>
+              <input id="p3" type="radio" name="parlayMenu" value="trans">
+            </div>
+
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div id="fc">
+      <div id="scrollBarHider" onscroll="run()">
+        <div id="content">
+          &nbsp
+        </div>
+      </div>
+    </div>
+
+<!-- debug
+      <div id="logger">
+        scrollX: ?
+      </div>
+-->
+    </div>
+    <script src="js/slider.js"></script>
+  </body>
+</html>

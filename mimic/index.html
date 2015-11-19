@@ -28,12 +28,12 @@
                 </div>
               </div>
             </div>
-            <button v-on:click="showList('friends')">Pick your friend</button>
+            <button class="pure-button" v-on:click="showList('friends')" class="pure-button">Pick your friend</button>
             <div v-if="fls" transition="expand" class="popup">
               <ul>
                 <li v-for="friend in friendsList">
                   {{ friend.name }}
-                  <button v-on:click="setSubData('opponent',$index)">(^_^)</button>
+                  <button  v-on:click="setSubData('opponent',$index)" >(^_^)</button>
                 </li>
               </ul>
             </div>
@@ -43,7 +43,7 @@
           <div v-if="componentsList.parlay" transition="expand" class="mods">
             What the parlay is?
             <input v-model="submitData.parlayContent">
-            <button v-on:click="appear('photo')">Next</button>
+            <button class="pure-button" v-on:click="appear('photo')">Next</button>
           </div>
 
           <!-- photo or donate -->
@@ -52,7 +52,7 @@
             <div class="pure-g">
               <div v-for="p in parTypes" class="pure-u-1-3">
                 <span v-bind:style="p.styleObject">{{ p.way }}</span>
-                <button v-on:click="setSubData('parlay',$index)">(^_^)</button>
+                <button class="pure-button" v-on:click="setSubData('parlay',$index)">(^_^)</button>
               </div>
             </div>
           </div>
@@ -61,12 +61,12 @@
           <div v-if="componentsList.jc" transition="expand" class="mods">
             <p>Pick one of your friend who is not in this parlay!</p>
             <p>Judged by: {{ submitData.judge }}</p>
-            <button v-on:click="showList('judge')">Pick a Judge!</button>
+            <button class="pure-button" v-on:click="showList('judge')">Pick a Judge!</button>
             <div v-if="jls" transition="expand" class="popup">
               <ul>
                 <li v-for="judge in judgeList">
                   {{ judge.name }}
-                  <button v-on:click="setSubData('judge',$index)">(^_^)</button>
+                  <button  v-on:click="setSubData('judge',$index)">(^_^)</button>
                 </li>
               </ul>
             </div>
@@ -74,7 +74,7 @@
 
           <!-- submission -->
           <div v-if="componentsList.sub" transition="expand" class="mods">
-            <button v-on:click="subForm">Parlay!</button>
+            <button class="pure-button" v-on:click="subForm">Parlay!</button>
           </div>
 
         </div>
