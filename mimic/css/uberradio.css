@@ -6,6 +6,10 @@ body {
   width: 80%;
 }
 
+.ctrl {
+  text-align: center;
+}
+
 #scrollBarHider {
   margin: 0 auto;
   width: 100%;
@@ -24,10 +28,18 @@ body {
 }
 
 #content {
-  width: 3800px;
+  width: 2800px;
 }
 
 #fform {
   top: 0px;
   z-index: 2;
+}
+
+#mb{
+  background: blue;
+  width:0;
+  height: 5px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
 }
