@@ -28,7 +28,7 @@ body {
 }
 
 #content {
-  width: 2800px;
+  width: 2000px;
 }
 
 #fform {
@@ -40,6 +40,6 @@ body {
   background: blue;
   width:0;
   height: 5px;
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-  transition: width 2s;
+  -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s;
 }

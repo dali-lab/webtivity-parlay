@@ -24,19 +24,25 @@ var run = function(){
   var mb = document.getElementById('mb');
 
   if(scrollX <= sL/3) {
-    p1.checked = true;
-    p2.checked = false;
-    p3.checked = false;
     mb.style.width = '0';
+    setTimeout(function(){
+      p1.checked = true;
+      p2.checked = false;
+      p3.checked = false;
+    },600);
   } else if(scrollX > sL/3 && scrollX <= 2 * sL/3) {
-    p2.checked = true;
-    p3.checked = false;
-    p1.checked = false;
     mb.style.width = '50%';
+    setTimeout(function(){
+      p2.checked = true;
+      p1.checked = false;
+      p3.checked = false;
+    },600);
   } else {
-    p3.checked = true;
-    p2.checked = false;
-    p1.checked = false;
     mb.style.width = '100%';
+    setTimeout(function(){
+      p3.checked = true;
+      p1.checked = false;
+      p2.checked = false;
+    },600);
   }
 }
